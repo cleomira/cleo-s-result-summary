@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  --lightRed: hsl(0, 100%, 67%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+  --lightSlateBlue-background: hsl(252, 100%, 67%);
+  --lightRoyalBlue-background: hsl(241, 81%, 54%);
+  --violetBlue-circle: hsla(256, 72%, 46%, 1);
+  --persianBlue-circle: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  /* background-color: var(--white); */
+  place-content: center;
+  display: grid;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.ResultDiv {
+  background-image: linear-gradient(
+    to bottom,
+    var(--lightSlateBlue-background),
+    var(--lightRoyalBlue-background)
+  );
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.ResultDiv h3 {
+  text-align: center;
+  color: var(--lightLavender);
+  font-size: 14px;
+}
+
+.ResultDiv h1 {
+  color: var(--white);
+}
+
+.ResultDiv h4 {
+  color: var(--lightLavender);
+  font-size: 14px;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  border: 1px solid;
+  border-radius: 5000px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--violetBlue-circle),
+    var(--persianBlue-circle)
+  );
+  border: none;
+  margin: 5% auto;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  width: inherit;
+  /* height: auto; */
+  text-align: center;
+  top: 20%;
+}
+
+.ResultDiv h2 {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ResultDiv p {
+  color: var(--lightLavender);
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+  /* padding-bottom: 30px; */
+}
+
+.summaryDiv {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-right: 25px;
+  background-color: var(--white);
+}
+
+.summaryDiv h2 {
+  font-size: 18px;
+}
+
+.reactionDiv {
+  display: flex;
+  background-color: hsla(0, 100%, 67%, 0.068);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.reactionDiv h3 {
+  color: var(--lightRed);
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 145px;
+}
+
+.reactionDiv p span {
+  color: var(--lightLavender);
+}
+
+.memoryDiv {
+  display: flex;
+  background-color: hsla(39, 100%, 56%, 0.046);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.memoryDiv h3 {
+  color: var(--orangeyYellow);
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 145px;
+}
+
+.memoryDiv p span {
+  color: var(--lightLavender);
+}
+
+.verbalDiv {
+  display: flex;
+  background-color: hsla(166, 100%, 37%, 0.034);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.verbalDiv h3 {
+  color: var(--greenTeal);
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 145px;
+}
+
+.verbalDiv p span {
+  color: var(--lightLavender);
+}
+
+.visualDiv {
+  display: flex;
+  background-color: hsla(234, 85%, 45%, 0.049);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.visualDiv h3 {
+  color: var(--cobaltBlue);
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 145px;
+}
+
+.visualDiv p span {
+  color: var(--lightLavender);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  color: var(--white);
+  background-color: var(--darkGrayBlue);
+  /* margin: 0 15px; */
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--lightRoyalBlue-background);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    padding: 10px 10px;
+    margin: 45px auto;
+  }
+
+  .ResultDiv {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    /* width: 70% */
+  }
+
+  .circle {
+    margin-top: 20px;
+  }
+
+  .ResultDiv p {
+    margin-top: 15px;
+  }
+
+  .ResultDiv h2 {
+    margin-top: 25px;
+  }
+
+  .summaryDiv {
+    border-radius: 19px;
+  }
+
+  .reactionDiv {
+    padding: 7px;
+  }
+
+  .memoryDiv {
+    padding: 7px;
+  }
+
+  .verbalDiv {
+    padding: 7px;
+  }
+
+  .visualDiv {
+    padding: 7px;
+  }
+
+  .reactionDiv h3 {
+    padding-left: 8px;
+    padding-right: 85px;
+  }
+
+  .memoryDiv h3 {
+    padding-left: 8px;
+    padding-right: 85px;
+  }
+
+  .verbalDiv h3 {
+    padding-left: 8px;
+    padding-right: 100px;
+  }
+
+  .visualDiv h3 {
+    padding-left: 8px;
+    padding-right: 100px;
+  }
+}
